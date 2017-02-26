@@ -1,0 +1,29 @@
+#progress1:before, #progress2:before, #progress3:before 
+{
+	content: attr(aria-valuenow)"%";
+	display: block;
+	position: absolute;
+	width: 37%;
+	color : black;
+	padding-top: 4px;
+ }
+.progress,.row
+{
+	height: 27px;
+    width: 45%;
+    margin: 18px auto;
+}
+button
+{
+    width: 20%;
+    margin-left: 9px;
+}
+select
+{
+    height: 31px;
+}
+.buttonAlign
+{
+	width: 74%;
+	display: inline-block;
+}
