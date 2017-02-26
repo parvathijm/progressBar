@@ -10,7 +10,7 @@ angular.module("progressBarApp",[])
       $scope.progressElement = document.getElementById($scope.selectedValue);
       var currentValue = $scope.progressElement.getAttribute("aria-valuenow");
       $scope.newValue = parseInt(currentValue) + parseInt(value);
-      if($scope.newValue > 0 && $scope.newValue <= 100)
+      if($scope.newValue > 0 && $scope.newValue <= 130)
       {
         $scope.progressElement.setAttribute("aria-valuenow",$scope.newValue);
         $scope.progressElement.style.width = $scope.newValue+"%";
@@ -18,7 +18,7 @@ angular.module("progressBarApp",[])
       }
       else
       {
-       if($scope.newValue > 100)
+       if($scope.newValue > 130)
        {
           $scope.progressElement.setAttribute("aria-valuenow",$scope.newValue);
           $scope.progressElement.style.width = 100+"%";
